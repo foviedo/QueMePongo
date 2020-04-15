@@ -14,4 +14,13 @@ public class Prenda {
 			throw new NoCoincidenTipoYCat();
 		}
 	}
+
+	public Prenda(Tipo tipo, String colorPrimario, String material, String categoria, String colorSecundario){
+
+		this.tipo = tipo; this.colorPrimario = colorPrimario; this.material = material; this.categoria = categoria;
+		this.colorSecundario = colorSecundario;
+		if(!tipo.esDeCategoria(categoria)){
+			throw new NoCoincidenTipoYCat();
+		}
+	}
 }
