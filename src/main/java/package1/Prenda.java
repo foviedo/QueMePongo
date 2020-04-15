@@ -1,7 +1,6 @@
 package package1;
 
 public class Prenda {
-
 	private Tipo tipo;
 	private String colorPrimario;
 	private String colorSecundario;
